@@ -18,7 +18,7 @@ Now, some very smart people a long time ago decided to add volume control as par
 You tell me.
 
 <h2>Theory of operation</h2>
-When the program starts for the first time (Power restored, plugged in etc), the currentVolume variable is not indexed with Windows volume. The only way we can index this with relative commands is to "run it into an end stop". This is achieved by sending 120 volume down commands. No matter where the slider is it is at zero even if Windows misses a few of them (unlikely on a PC from the past decade).
+When the program starts for the first time (Power restored, plugged in etc), the currentVolume variable is not indexed with Windows volume. The only way we can index this with relative commands is to "run it into an end stop". This is achieved by sending 120 volume down commands. No matter where the slider was, it is at zero now even if Windows misses a few of them (unlikely on a PC from the past decade).
 
 After the program has "homed" the audio slider, normal state machine operation takes over. The only thing of note is that state 4 is not a real state, yet the amalgamation of 3 states into 1 state which can be done in high level languages. State 4 handles both the upwards and downwards incrementing of the volume slider whilst checking if it coincides with the count in memory and the analog read value.
 
