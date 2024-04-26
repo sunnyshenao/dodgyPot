@@ -20,7 +20,7 @@ You tell me.
 <h2>Theory of operation</h2>
 When the program starts for the first time (Power restored, plugged in etc), the currentVolume variable is not indexed with Windows volume. The only way we can index this with relative commands is to "run it into an end stop". This is achieved by sending 120 volume down commands. No matter where the slider was, it is at zero now even if Windows misses a few of them (unlikely on a PC from the past decade).
 
-After the program has "homed" the audio slider, normal state machine operation takes over. The only thing of note is that state 4 is not a real state, yet the amalgamation of 3 states into 1 state which can be done in high level languages. State 4 handles both the upwards and downwards incrementing of the volume slider whilst checking if it coincides with the count in memory and the analog read value.
+After the program has "homed" the audio slider, normal state machine operation takes over. The only thing of note is that state 4 is not a real state, but it is the amalgamation of 3 states into 1 state which can be done in high level languages. State 4 handles both the upwards and downwards incrementing of the volume slider whilst checking if it coincides with the count in memory and the analog read value.
 
 <h2>I'm gonna build one</h2>
 Don't. Don't build this one in particular, build one of the hundreds of rotary encoder variants of this project. This is designed to help in an extremely niche situation where you somehow have the exact same audio control panel off some battleship with a 15 position sub-D connector on it AND you would like to hook it up to your PC.
