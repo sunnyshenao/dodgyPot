@@ -9,6 +9,8 @@
 
 Control Windows audio with a potentiometer
 
+THIS WILL ONLY WORK WITH AN ARDUINO LEONADRO , PRO MICRO OR SIMILAR AS THEY HAVE HID SUPPORT.
+
 Rewrote the original Italian delicacy into a relatively nicely structured finite state machine. This is not the best way to control Windows audio.
 
 <h2>An explanation of why this is a terrible idea</h2>
