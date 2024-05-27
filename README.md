@@ -1,11 +1,6 @@
 # dodgyPot
-== Changelog v3.0==
-+ Version increment due to reimplementation in form of a finite state machine.
-+ Changed variable names for readability.
-+ Squashed the bug where volume range was from 0 to 98%. Works good now.
-+ Ate some spaghetti
-+ Made some more spaghetti
-
+== Changelog v3.2==
+Changelogs are now located in the header of the code :)
 
 Control Windows audio with a potentiometer
 
